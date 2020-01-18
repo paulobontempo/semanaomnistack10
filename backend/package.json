@@ -5,14 +5,15 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": " node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "axios": "^0.19.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "mongoose": "^5.8.9"
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
   }
 }
