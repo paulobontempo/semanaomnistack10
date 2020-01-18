@@ -6,5 +6,6 @@ NodeJs
 :heart:
 
 # Heroku
-backend - https://omni-stack-10-backend.herokuapp.com
-web interface - ?
+backend :point_right: https://omni-stack-10-backend.herokuapp.com 
+
+web interface :point_right:  ????
