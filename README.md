@@ -16,7 +16,7 @@ Heroku web
   - `git remote add web https://git.heroku.com/omni-stack-10-web.git`
   - `git subtree push --prefix web web master`
 
-# Heroku for test
+# Heroku for fun
 backend :point_right: https://omni-stack-10-backend.herokuapp.com 
 
 web interface :point_right: https://omni-stack-10-web.herokuapp.com/
