@@ -2,12 +2,17 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const cors = require('cors');
-// const env = require('../config/env');
 
 const app = express();
 
-const mongodbUri = process.env.MONGODB_URI;
-// const mongodbUri = process.env.MONGODB_URI || env.getMongoDbUri();
+let mongodbUri = '';
+
+if (!process.env.MONGODB_URI) {
+  const env = require('../config/env');
+  mongodbUri = env.getMongoDbUri();
+} else {
+  mongodbUri = process.env.MONGODB_URI;
+}
 
 mongoose.connect(mongodbUri,
   { useNewUrlParser: true, 
