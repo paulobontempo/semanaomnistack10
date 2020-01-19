@@ -7,8 +7,6 @@ const app = express();
 
 const mongodbUri = process.env.MONGODB_URI || env.getMongoDbUri();
 
-console.log(`mongodb_uri: ${mongodbUri}`);
-
 mongoose.connect(mongodbUri,
   { useNewUrlParser: true, 
     useUnifiedTopology: true,
