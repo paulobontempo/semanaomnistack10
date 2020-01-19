@@ -1,8 +1,8 @@
 # Semana OmniStack 10.0
 RocketSeat
 
-# Tec 
-NodeJs
+# Techs
+NodeJs, React
 :heart:
 
 # Deploy 
