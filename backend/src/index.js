@@ -2,8 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
 const cors = require('cors');
+const http = require('http');
+const { setupWebsocket } = require('./websocket');
 
 const app = express();
+const server = http.Server(app);
+
+setupWebsocket(server);
 
 let mongodbUri = '';
 
@@ -24,4 +29,4 @@ app.use(cors());
 app.use(express.json());
 app.use(routes); 
 
-app.listen(process.env.PORT || 3333);
+server.listen(process.env.PORT || 3333);
