@@ -21,7 +21,7 @@ module.exports = {
 
       const { name = login, avatar_url, bio } = apiResponse.data;
 
-      console.log(name, avatar_url, bio, github_username, techs);
+      const techsArray = parseStringAsArray(techs);
 
       const location = {
         type: "Point",
@@ -33,7 +33,7 @@ module.exports = {
         name,
         avatar_url,
         bio,
-        techs,
+        techs: techsArray,
         location
       });
     }
